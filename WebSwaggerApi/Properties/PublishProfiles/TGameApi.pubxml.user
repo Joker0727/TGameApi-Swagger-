@@ -6,7 +6,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\Users\Administrator\Desktop\123</_PublishTargetUrl>
+    <_PublishTargetUrl>F:\123</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
@@ -15,14 +15,23 @@
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>02/22/2013 08:43:40</publishTime>
     </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>02/22/2013 08:43:40</publishTime>
+    </File>
     <File Include="bin/ApplicationInsights.config">
       <publishTime>03/08/2018 17:28:06</publishTime>
     </File>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>03/28/2018 21:27:28</publishTime>
+      <publishTime>08/16/2018 10:41:03</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>03/28/2018 21:27:28</publishTime>
+      <publishTime>08/16/2018 10:41:03</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>03/29/2018 14:51:46</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>03/29/2018 14:51:46</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
       <publishTime>12/07/2015 19:04:38</publishTime>
@@ -123,6 +132,12 @@
     <File Include="bin/System.Web.WebPages.Razor.dll">
       <publishTime>01/28/2015 04:04:30</publishTime>
     </File>
+    <File Include="bin/TGameApi.SqlServerDataAccess.EF.BFL.dll">
+      <publishTime>08/08/2018 09:37:11</publishTime>
+    </File>
+    <File Include="bin/TGameApi.SqlServerDataAccess.EF.YWT.dll">
+      <publishTime>07/31/2018 10:40:30</publishTime>
+    </File>
     <File Include="bin/WebActivatorEx.dll">
       <publishTime>02/08/2013 16:42:28</publishTime>
     </File>
@@ -130,7 +145,16 @@
       <publishTime>09/10/2013 17:28:38</publishTime>
     </File>
     <File Include="bin/WebSwaggerApi.dll">
-      <publishTime>03/28/2018 15:46:22</publishTime>
+      <publishTime>08/16/2018 10:35:33</publishTime>
+    </File>
+    <File Include="bin/WebSwaggerApi.pdb">
+      <publishTime>08/16/2018 10:35:33</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/EntityFramework.resources.dll">
+      <publishTime>10/23/2017 13:15:34</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/EntityFramework.SqlServer.resources.dll">
+      <publishTime>10/23/2017 13:15:34</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Net.Http.Formatting.resources.dll">
       <publishTime>01/28/2015 04:02:44</publishTime>
@@ -190,7 +214,7 @@
       <publishTime>03/28/2018 15:45:05</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>03/28/2018 21:27:21</publishTime>
+      <publishTime>08/16/2018 10:40:55</publishTime>
     </File>
     <File Include="scripts/ai.0.22.9-build00167.js">
       <publishTime>03/08/2018 17:28:07</publishTime>
@@ -244,7 +268,7 @@
       <publishTime>03/08/2018 19:25:14</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>03/28/2018 15:46:23</publishTime>
+      <publishTime>08/16/2018 10:40:54</publishTime>
     </File>
   </ItemGroup>
 </Project>

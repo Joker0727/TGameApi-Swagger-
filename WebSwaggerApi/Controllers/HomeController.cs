@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
@@ -12,11 +14,11 @@ namespace WebSwaggerApi.Controllers
 {
     public class HomeController : ApiController
     {
-       /// <summary>
-       /// 测试一般类型的参数
-       /// </summary>
-       /// <param name="str">测试参数</param>
-       /// <returns></returns>
+        /// <summary>
+        /// 测试一般类型的参数
+        /// </summary>
+        /// <param name="str">测试参数</param>
+        /// <returns></returns>
         [System.Web.Http.HttpGet, System.Web.Http.Route("test")]
         public string Index(string str)
         {
@@ -33,7 +35,7 @@ namespace WebSwaggerApi.Controllers
             string hStr = string.Empty;
             foreach (Hobbies item in user.HobbyList)
             {
-                hStr += item.hName +" ";
+                hStr += item.hName + " ";
             }
             string str = "你好，我是" + user.Name + ",今年" + user.Age + "岁了,我的爱好是" + hStr;
             return str;
@@ -57,7 +59,7 @@ namespace WebSwaggerApi.Controllers
                 HttpPostedFile file = files[i];
                 file.SaveAs(Path.Combine(path, file.FileName));
             }
-            return "成功上传到"+ path;
+            return "成功上传到" + path;
         }
         /// <summary>
         /// 枚举实现下拉框选择
@@ -67,7 +69,7 @@ namespace WebSwaggerApi.Controllers
         [System.Web.Http.HttpGet, System.Web.Http.Route("choose/type")]
         public string ChooseType(TypeEnums type)
         {
-            return "成功选择了"+ type;
+            return "成功选择了" + type;
         }
     }
 }
