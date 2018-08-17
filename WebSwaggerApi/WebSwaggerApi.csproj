@@ -214,9 +214,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\TGameModel\GardenSportAndSleepDto.cs" />
     <Compile Include="Models\TGameModel\GardenTemp.cs" />
     <Compile Include="Models\TGameModel\PieceDemoSoprtAndSleepDto.cs" />
     <Compile Include="Models\TGameModel\SingleAreaCompareDto.cs" />
+    <Compile Include="Models\TGameModel\SingleCitySleepDto.cs" />
+    <Compile Include="Models\TGameModel\SingleCitySportDto.cs" />
+    <Compile Include="Models\TGameModel\SleepAndSportSearchDto.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="MyToolHelper\TGameHelper\TGameToolHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

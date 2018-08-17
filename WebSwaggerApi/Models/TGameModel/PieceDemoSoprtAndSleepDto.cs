@@ -36,6 +36,10 @@ namespace WebSwaggerApi.Models.TGameModel
         /// </summary>
         public double PercentLowery { get; set; }
         /// <summary>
+        /// 平均睡眠时长
+        /// </summary>
+        public double AverageSleep { get; set; }
+        /// <summary>
         /// 基本没睡的平均睡眠时长
         /// </summary>
         public double AverageNoSleep { get; set; }
