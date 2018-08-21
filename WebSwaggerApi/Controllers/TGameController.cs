@@ -422,17 +422,26 @@ namespace WebSwaggerApi.Controllers
             DateTime firstDateTime,
             DateTime lastDateTime,
             string cityName = null,
-            string districtName = null)
+            string districtName = null,
+            int gardenId= -1)
         {
             string firstDateTimeStr = firstDateTime.ToString("yyy-MM-dd");
             string lastDateTimeStr = lastDateTime.ToString("yyy-MM-dd");
-
-            var gardenList = await gl.GetGardenCityNameAndIDAsync(cityName: cityName, districtName: districtName);
-
             List<int> gidList = new List<int>();
-            foreach (var g in gardenList)
+            List<GardenTemp> gardenList = new List<GardenTemp>();
+
+            if (gardenId < 0)
             {
-                gidList.Add(g.Gardenid);
+                gardenList = await gl.GetGardenCityNameAndIDAsync(cityName: cityName, districtName: districtName);
+
+                foreach (var g in gardenList)
+                {
+                    gidList.Add(g.Gardenid);
+                }
+            }
+            else
+            {
+                gidList.Add(gardenId);
             }
 
             var qList = await bfl.bhyf_bfl_move_analysis
@@ -557,17 +566,26 @@ namespace WebSwaggerApi.Controllers
             DateTime firstDateTime,
             DateTime lastDateTime,
             string cityName = null,
-            string districtName = null)
+            string districtName = null,
+            int gardenId=-1)
         {
             string firstDateTimeStr = firstDateTime.ToString("yyy-MM-dd");
             string lastDateTimeStr = lastDateTime.ToString("yyy-MM-dd");
-
-            var gardenList = await gl.GetGardenCityNameAndIDAsync(cityName: cityName, districtName: districtName);
-
             List<int> gidList = new List<int>();
-            foreach (var g in gardenList)
+            List<GardenTemp> gardenList = new List<GardenTemp>();
+
+            if (gardenId < 0)
             {
-                gidList.Add(g.Gardenid);
+                gardenList = await gl.GetGardenCityNameAndIDAsync(cityName: cityName, districtName: districtName);
+
+                foreach (var g in gardenList)
+                {
+                    gidList.Add(g.Gardenid);
+                }
+            }
+            else
+            {
+                gidList.Add(gardenId);
             }
 
             var sList = await bfl.bhyf_bfl_move_analysis

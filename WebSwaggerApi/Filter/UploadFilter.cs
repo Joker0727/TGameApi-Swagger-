@@ -21,7 +21,6 @@ namespace WebSwaggerApi.Filter
                     description = "文件上传",
                     required = true,
                     type = "file",
-
                 });
             }
         }
